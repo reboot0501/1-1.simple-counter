@@ -27,7 +27,9 @@ class Counter extends Component {
         return(
             <div>
                 <Button variant='contained' color='primary' size='large' onClick={this.increment.bind(this)}> + </Button>
+
                 <Box component='span' m={5}> { this.state.count } </Box> { /* Html 에 사용하는 div, span Tag를 Wrapping */ }
+                
                 <Button variant='contained' color='primary' size='large' onClick={this.decrement.bind(this)}> - </Button>
             </div>
         )
